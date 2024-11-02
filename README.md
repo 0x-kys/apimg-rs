@@ -1,8 +1,6 @@
 setup
 
 ```
-cargo install
-
 cargo run
 ```
 
