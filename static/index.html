@@ -133,7 +133,6 @@
 
     let selectedFiles = [];
 
-    // Drag and drop handlers
     dropZone.addEventListener('dragover', (e) => {
         e.preventDefault();
         dropZone.classList.add('dragover');
@@ -219,7 +218,6 @@
             if (response.ok) {
                 messageDiv.className = 'success';
                 messageDiv.textContent = 'Upload successful!';
-                // Update preview with server filenames
                 result.filenames.forEach(filename => {
                     const previewItem = document.createElement('div');
                     previewItem.className = 'preview-item';
